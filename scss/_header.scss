@@ -1,0 +1,146 @@
+.navbar {
+  padding: 50px 0;
+  .row {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    a {
+      color: $dPurple;
+    }
+    .logo {
+      a {
+        text-transform: uppercase;
+        font-size: 21px;
+      }
+    }
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      a {
+        font-weight: 600;      
+        padding-left: 27px;
+        font-size: 14px;      
+      }
+      .login {        
+        margin: 0 0 0 21px;
+        border-left: 1px solid #000;
+        a:first-child {
+          padding: 8px 27px;
+          border-radius: 36px;
+          color: $dPurple;
+          margin-left: 20px;
+          display: inline-block;
+          transition: .3s;
+          &:hover {
+            color: $white;
+            background-color: $yellow;
+          }
+        }
+        a:last-child {
+          padding: 8px 27px;
+          background-color: $purple;
+          border-radius: 36px;
+          color: $white;
+          margin-left: 20px;
+          display: inline-block;
+          border: 1px solid $purple;
+          transition: .3s;
+          &:hover {
+            color: $dPurple;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Hero Section 
+
+.hero {
+  overflow: hidden;
+  padding-top: 4%;
+  margin-bottom: 50px;
+  .row {
+    display:  flex; 
+    justify-content: center;
+    gap: 30px;
+    .text {
+      flex: 2;
+      color: $dPurple;
+      h1 {
+        font-size: 50px;
+        font-weight: 500;
+        margin: 0;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 19px 0 23px;
+      }
+      .get-started {
+        padding: 12px 42px;
+        background-color: $purple;
+        border-radius: 36px;
+        color: #FFF;
+        border: 1px solid $purple;
+        display: inline-block;
+        transition: .3s;
+        &:hover {
+          font-weight: 600; 
+          color: $dPurple;
+          background-color: transparent;
+        }
+      }
+    }
+    .img {
+      flex: 1;
+      position: relative;
+      img {
+        max-width: 100%;
+      }
+      .box {
+        position: absolute;
+        bottom: 38px;
+        left: -135px;
+        width: 380px;
+        padding: 17px 28px 18px;
+        color: $white;
+        background-color: $dPurple;
+        border-top-right-radius: 27px;
+        border-bottom-left-radius: 27px;
+        p {
+          margin-bottom: 20px;
+          font-size: 1rem;
+          line-height: 1.7;
+        }
+        span {
+          color: $yellow;
+          display: block; 
+          font-size: 13px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+// Brand Section
+
+.brand {
+  overflow: hidden;
+  background-color: $lightGray;
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 95px;
+    svg {
+      cursor: pointer;
+    }
+  }
+}

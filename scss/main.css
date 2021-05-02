@@ -1,3 +1,152 @@
+.pd {
+  padding: 100px 0; }
+
+.heading {
+  color: #0B093B;
+  padding-bottom: 70px; }
+  .heading h1 {
+    margin: 0 0 10px;
+    font-weight: 600; }
+  .heading p {
+    line-height: 1.6;
+    width: 71%; }
+
+.navbar {
+  padding: 50px 0; }
+  .navbar .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize; }
+    .navbar .row a {
+      color: #0B093B; }
+    .navbar .row .logo a {
+      text-transform: uppercase;
+      font-size: 21px; }
+    .navbar .row nav {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .navbar .row nav a {
+        font-weight: 600;
+        padding-left: 27px;
+        font-size: 14px; }
+      .navbar .row nav .login {
+        margin: 0 0 0 21px;
+        border-left: 1px solid #000; }
+        .navbar .row nav .login a:first-child {
+          padding: 8px 27px;
+          border-radius: 36px;
+          color: #0B093B;
+          margin-left: 20px;
+          display: inline-block;
+          transition: .3s; }
+          .navbar .row nav .login a:first-child:hover {
+            color: #FFF;
+            background-color: #F2B300; }
+        .navbar .row nav .login a:last-child {
+          padding: 8px 27px;
+          background-color: #7620FF;
+          border-radius: 36px;
+          color: #FFF;
+          margin-left: 20px;
+          display: inline-block;
+          border: 1px solid #7620FF;
+          transition: .3s; }
+          .navbar .row nav .login a:last-child:hover {
+            color: #0B093B;
+            background-color: transparent; }
+
+.hero {
+  overflow: hidden;
+  padding-top: 4%;
+  margin-bottom: 50px; }
+  .hero .row {
+    display: flex;
+    justify-content: center;
+    gap: 30px; }
+    .hero .row .text {
+      flex: 2;
+      color: #0B093B; }
+      .hero .row .text h1 {
+        font-size: 50px;
+        font-weight: 500;
+        margin: 0; }
+      .hero .row .text p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 19px 0 23px; }
+      .hero .row .text .get-started {
+        padding: 12px 42px;
+        background-color: #7620FF;
+        border-radius: 36px;
+        color: #FFF;
+        border: 1px solid #7620FF;
+        display: inline-block;
+        transition: .3s; }
+        .hero .row .text .get-started:hover {
+          font-weight: 600;
+          color: #0B093B;
+          background-color: transparent; }
+    .hero .row .img {
+      flex: 1;
+      position: relative; }
+      .hero .row .img img {
+        max-width: 100%; }
+      .hero .row .img .box {
+        position: absolute;
+        bottom: 38px;
+        left: -135px;
+        width: 380px;
+        padding: 17px 28px 18px;
+        color: #FFF;
+        background-color: #0B093B;
+        border-top-right-radius: 27px;
+        border-bottom-left-radius: 27px; }
+        .hero .row .img .box p {
+          margin-bottom: 20px;
+          font-size: 1rem;
+          line-height: 1.7; }
+        .hero .row .img .box span {
+          color: #F2B300;
+          display: block;
+          font-size: 13px;
+          text-align: right; }
+
+.brand {
+  overflow: hidden;
+  background-color: #F5F5F5; }
+  .brand .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 95px; }
+    .brand .row svg {
+      cursor: pointer; }
+
+.services {
+  overflow: hidden; }
+  .services .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 52px; }
+    .services .row .col i {
+      color: #F2B300;
+      font-size: 35px; }
+    .services .row .col h3 {
+      margin: 20px 0;
+      font-weight: 100;
+      color: #0B093B; }
+    .services .row .col p {
+      color: #0B093B; }
+    .services .row .two i {
+      color: #F40051; }
+    .services .row .three i {
+      color: #4CD5C5; }
+    .services .row .four i {
+      color: #7620FF; }
+
 html {
   box-sizing: border-box;
   font-size: 100%; }
@@ -11,7 +160,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   height: 10000px;
-  line-height: 1.3; }
+  line-height: 1.6; }
 
 a {
   text-decoration: none; }
@@ -24,6 +173,10 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px; }
+
+::selection {
+  color: #F2B300;
+  background-color: #0B093B; }
 
 @media (min-width: 576px) {
   .container {

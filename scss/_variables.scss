@@ -18,3 +18,23 @@ $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
+
+
+  // Helping Clasess
+
+.pd {
+  padding: 100px 0;
+}
+
+.heading {
+  color: $dPurple;
+  padding-bottom: 70px;
+  h1 {
+    margin: 0 0 10px;
+    font-weight: 600;
+  }
+  p {
+    line-height: 1.6;
+    width: 71%;
+  }
+}
