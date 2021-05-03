@@ -21,16 +21,20 @@
       <div class="container">
         <div class="row">
           <div class="logo">
+            <span class="yellow"></span>
+            <span class="green"></span>
+            <span class="blue"></span>
+            <span class="red"></span>
             <a href="index.html">fanatic</a>
           </div>
+          <i class="fas fa-bars humbrger"></i>
           <nav>
-            
-            <a href="#">home</a>
-            <a href="#">services</a>
-            <a href="#">projects</a>
-            <a href="#">blog</a>
-            <a href="#">pricing</a>
-            <a href="#">contact</a>
+            <a href="#" data-scroll="home">home</a>
+            <a href="#" data-scroll="services">services</a>
+            <a href="#" data-scroll="projects">projects</a>
+            <a href="#" data-scroll="blog">blog</a>
+            <a href="#" data-scroll="pricing">pricing</a>
+            <a href="#" data-scroll="contact">contact</a>
             <div class="login">
               <a href="#">log in</a>
               <a href="#">get started</a>
@@ -44,7 +48,7 @@
 
     <!-- Hero Section  -->
 
-    <div class="hero">
+    <div class="hero" id="home">
       <div class="container">
         <div class="row">
           <div class="text">
@@ -313,7 +317,7 @@
 
     <!-- Services  -->
 
-    <div class="services pd">
+    <div class="services pd" id="services">
       <div class="container">
         <div class="heading">
           <h1>
@@ -408,7 +412,7 @@
 
     <!-- Projects  -->
 
-    <div class="project pd">
+    <div class="project pd" id="projects">
       <div class="container">
         <div class="heading">
           <h1>
@@ -525,7 +529,7 @@
 
     <!-- Blog  -->
 
-    <div class="blog pd">
+    <div class="blog pd" id="blog">
       <div class="container">
         <div class="heading">
           <h1>
@@ -659,7 +663,7 @@
 
     <!-- Pricing  -->
 
-    <div class="pricing pd">
+    <div class="pricing pd" id="pricing">
       <div class="container">
         <div class="heading">
           <h1>
@@ -744,7 +748,7 @@
 
     <!-- Contact Us  -->
 
-    <div class="contact pd">
+    <div class="contact" id="contact">
       <div class="container">
         <div class="heading">
           <h1>
@@ -756,16 +760,59 @@
         </div>
         <div class="row">
           <div class="form">
-
+            <div class="col">
+              <label for="">Full Name</label>
+            <input type="text" value="Product Offer">
+            </div>
+            <div class="col">
+              <label for="">Email</label>
+              <input type="email" value="lopremipusm@mail.comt">
+            </div>
+            <div class="col">
+              <label for="">Subject</label>
+              <input type="text" value="Subject">
+            </div>
+            <div class="col">
+              <label for="">Your Message Here</label>
+              <textarea></textarea>
+            </div>
+            <a href="#" class="submit">Send Message</a>
           </div>
-          <div class="img">
-            
+          <div class="imgs">
+            <div class="img">
+              <img src="images/pexels-oleg-magni-2764678.jpg" draggable="false" alt="">
+            </div>
+            <div class="img right">
+              <img src="images/pexels-rahul-716398.jpg" draggable="false" alt="">
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Contact Us  -->
+
+    <!-- Footer  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="logo">
+            <span class="yellow"></span>
+            <span class="green"></span>
+            <span class="purple"></span>
+            <span class="red"></span>
+            <a href="index.html">fanatic</a>
+          </div>
+          <div class="copyright">
+            &copy; 2021 - fanatic All Right Reserved
+          </div>
+          <a href="#" class="top" id="top"><i class="fas fa-chevron-up"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer  -->
 
 
     <script src="js/jquery-3.5.1.min.js"></script>

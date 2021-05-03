@@ -9,10 +9,15 @@
       color: $dPurple;
     }
     .logo {
+      position: relative;
+      padding-left: 40px;
       a {
         text-transform: uppercase;
         font-size: 21px;
       }
+    }
+    .humbrger {
+      display: none;
     }
     nav {
       flex: 1;
@@ -21,7 +26,7 @@
       align-items: center;
       a {
         font-weight: 600;      
-        padding-left: 27px;
+        padding-left: 24px;
         font-size: 14px;      
       }
       .login {        
@@ -58,6 +63,45 @@
   }
 }
 
+@media (max-width: 992px) {
+  .navbar {
+    position: relative;
+    .humbrger {
+      display: block !important;
+      color: $dPurple;
+      cursor: pointer;
+      font-size: 23px;
+    }
+    nav {
+      align-items: flex-start !important;
+      flex-direction: column;
+      z-index: 99;
+      position: absolute;
+      bottom: -242px;
+      right: 22px;
+      width: 341px;
+      background-color: #0B093B;
+      padding: 12px 5px;
+      border-top-right-radius: 15px;
+      > a {
+        margin-bottom: 10px;
+        color: $white !important;
+        display: block;
+      }
+      .login {
+        margin: 0 auto 0 36px !important;
+        display: block !important;
+        border-left: 0 !important;
+        a:first-child {
+          color: #fff !important;
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+
 
 // Hero Section 
 
@@ -67,6 +111,7 @@
   margin-bottom: 50px;
   .row {
     display:  flex; 
+    flex-flow: row wrap;
     justify-content: center;
     gap: 30px;
     .text {
@@ -129,6 +174,31 @@
   }
 }
 
+
+@media (max-width: 992px) {
+  .hero {
+    padding-top: 14%;
+    .row {
+      text-align: center;
+      flex-flow: column wrap;
+      .text {
+        h1 {
+          font-size: 25px;
+        }
+        p {
+          width: 100%;
+          margin: 20px auto !important;
+        }
+      }
+      .img {
+        .box {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 // Brand Section
 
 .brand {
@@ -136,11 +206,19 @@
   background-color: $lightGray;
   .row {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     gap: 95px;
     svg {
       cursor: pointer;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .brand {
+    .row {
+      flex-flow: column wrap;
     }
   }
 }

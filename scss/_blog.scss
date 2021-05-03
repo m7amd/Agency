@@ -2,7 +2,7 @@
   overflow: hidden;
   .row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     .card {
       box-shadow: 9px 11px 41px $lightGray;
@@ -69,6 +69,18 @@
         display: block; 
         font-size: 13px;
         text-align: right;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .resume {
+    .row {
+      .box {
+        p {
+          font-size: 11px;
+        }
       }
     }
   }

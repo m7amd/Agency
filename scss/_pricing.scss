@@ -1,9 +1,8 @@
 .pricing {
   overflow: hidden;
   .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     .card {
       padding: 20px 16px 30px;

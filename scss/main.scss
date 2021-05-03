@@ -18,11 +18,9 @@ html {
   padding: 0;
   margin: 0;
 }
-
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  height: 10000px;
   line-height: 1.6;
 }
 
@@ -34,16 +32,43 @@ ul {
   list-style: none;
 }
 
+::selection {
+  color: $yellow;
+  background-color: $dPurple;
+}
+
+a.top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: $dPurple;
+  color: $white;
+  width: 45px;
+  height: 45px;
+  display: block;
+  border: 2px solid #0B093B;
+  border-radius: 50%;
+  line-height: 43px;
+  text-align: center;
+  font-size: 19px;
+  transition: .3s;
+  &:hover {
+    background-color: transparent;
+    color: $dPurple;
+  }
+}
+
+@media (max-width: 992px) {
+  a.top {
+    // bottom: 66px;
+  }
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-::selection {
-  color: $yellow;
-  background-color: $dPurple;
 }
 
 // Small Screen
