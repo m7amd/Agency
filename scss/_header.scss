@@ -96,6 +96,11 @@
           color: #fff !important;
           margin-left: 0 !important;
         }
+        a:last-child {
+          &:hover {
+            color: $white !important;
+          }
+        }
       }
     }
   }

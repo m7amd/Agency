@@ -52,15 +52,10 @@ a.top {
   text-align: center;
   font-size: 19px;
   transition: .3s;
+  display: none;
   &:hover {
     background-color: transparent;
     color: $dPurple;
-  }
-}
-
-@media (max-width: 992px) {
-  a.top {
-    // bottom: 66px;
   }
 }
 

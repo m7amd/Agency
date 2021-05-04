@@ -139,7 +139,9 @@ span.red {
         border-left: 0 !important; }
         .navbar nav .login a:first-child {
           color: #fff !important;
-          margin-left: 0 !important; } }
+          margin-left: 0 !important; }
+        .navbar nav .login a:last-child:hover {
+          color: #FFF !important; } }
 .hero {
   overflow: hidden;
   padding-top: 4%;
@@ -673,7 +675,8 @@ a.top {
   line-height: 43px;
   text-align: center;
   font-size: 19px;
-  transition: .3s; }
+  transition: .3s;
+  display: none; }
   a.top:hover {
     background-color: transparent;
     color: #0B093B; }
